@@ -1,0 +1,30 @@
+
+T1CA0 000:056 SEGGER J-Link V6.00e Log File (0001ms, 0025ms total)
+T1CA0 000:056 DLL Compiled: Aug  4 2016 09:37:38 (0001ms, 0025ms total)
+T1CA0 000:056 Logging started @ 2019-08-19 16:39 (0001ms, 0025ms total)
+T1CA0 000:057 JLINK_SetWarnOutHandler(...) (0000ms, 0025ms total)
+T1CA0 000:057 JLINK_OpenEx(...)
+Firmware: J-Link V9 compiled Dec 30 2018 15:35:20
+Hardware: V9.20
+S/N: 269200585
+Feature(s): GDB, RDI, FlashBP, FlashDL, JFlash, RDDI  returns O.K. (0018ms, 0043ms total)
+T1CA0 000:075 JLINK_SetErrorOutHandler(...) (0000ms, 0043ms total)
+T1CA0 000:075 JLINK_ExecCommand("ProjectFile = "E:\STM32\STM¹¤³Ì\HAL¿â\²âËÙ\USER\JLinkSettings.ini"", ...).   returns 0x00 (0107ms, 0150ms total)
+T1CA0 000:189 JLINK_ExecCommand("Device = STM32F429IGTx", ...). Device "STM32F429IG" selected.  returns 0x00 (0011ms, 0161ms total)
+T1CA0 000:200 JLINK_ExecCommand("DisableConnectionTimeout", ...).   returns 0x01 (0000ms, 0161ms total)
+T1CA0 000:200 JLINK_GetHardwareVersion()  returns 0x16760 (0000ms, 0161ms total)
+T1CA0 000:200 JLINK_GetDLLVersion()  returns 60005 (0000ms, 0161ms total)
+T1CA0 000:200 JLINK_GetFirmwareString(...) (0000ms, 0161ms total)
+T1CA0 000:223 JLINK_GetDLLVersion()  returns 60005 (0000ms, 0161ms total)
+T1CA0 000:223 JLINK_GetCompileDateTime() (0000ms, 0161ms total)
+T1CA0 000:230 JLINK_GetFirmwareString(...) (0000ms, 0161ms total)
+T1CA0 000:236 JLINK_GetHardwareVersion()  returns 0x16760 (0000ms, 0161ms total)
+T1CA0 000:263 JLINK_TIF_Select(JLINKARM_TIF_JTAG)  returns 0x00 (0001ms, 0162ms total)
+T1CA0 000:264 JLINK_SetSpeed(10000) (0000ms, 0162ms total)
+T1CA0 000:264 JLINK_GetIdData(...) >0x2F8 JTAG>Could not measure total IR len. TDO is constant high. >0xC8 JTAG>STM32 (connect): Can not attach to CPU. Trying connect under reset. >0x2F8 JTAG>Could not measure total IR len. TDO is constant high. >0xC8 JTAG>
+  ***** Error: STM32: Connecting to CPU via connect under reset failed. >0x2F8 JTAG>Could not measure total IR len. TDO is constant high. >0xC8 JTAG>STM32 (connect): Can not attach to CPU. Trying connect under reset. >0x2F8 JTAG>
+Could not measure total IR len. TDO is constant high. >0xC8 JTAG>
+  ***** Error: STM32: Connecting to CPU via connect under reset failed. (0321ms, 0483ms total)
+T1CA0 002:978 JLINK_Close() (0007ms, 0490ms total)
+T1CA0 002:978  (0007ms, 0490ms total)
+T1CA0 002:978 Closed (0007ms, 0490ms total)

@@ -7,6 +7,8 @@
 float speed = 0;
 int main(void)
 {
+	u8 dir = 0;
+		u16 MotorPwmVal = 0;
 	  extern u8 PrintfSign2;
 		extern u8 PrintfSign;
 		extern u32 HighNumber;
@@ -16,15 +18,22 @@ int main(void)
     LED_Init();                     //³õÊ¼»¯LED 
 		EXTI_Init();
 		uart_init(115200);
-		TIM3_Init(2700-1,9000-1);
+		PWM_Init(500-1,90-1);
+		TIM3_Init(2700-1,12000-1);
     while(1)
     {
+			delay_us(100);
 			if(PrintfSign)
 			{
 				printf("%fr/s\n",speed);
 				PrintfSign = 0;
 				PrintfSign2 = 1;
 			}
+			if(dir)MotorPwmVal++;
+			else MotorPwmVal--;
+			if(MotorPwmVal>300)dir = 0;
+			if(MotorPwmVal==0)dir = 1;
+			TIM4_SetCompare2(MotorPwmVal);
     }
 }
 
